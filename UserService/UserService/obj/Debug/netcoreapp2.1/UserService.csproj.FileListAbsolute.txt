@@ -1,0 +1,14 @@
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\bin\Debug\netcoreapp2.1\UserService.deps.json
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\bin\Debug\netcoreapp2.1\UserService.runtimeconfig.json
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\bin\Debug\netcoreapp2.1\UserService.runtimeconfig.dev.json
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\bin\Debug\netcoreapp2.1\UserService.dll
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\bin\Debug\netcoreapp2.1\UserService.pdb
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.csprojAssemblyReference.cache
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.csproj.CoreCompileInputs.cache
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.RazorAssemblyInfo.cache
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.RazorAssemblyInfo.cs
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.AssemblyInfoInputs.cache
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.AssemblyInfo.cs
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.RazorTargetAssemblyInfo.cache
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.dll
+C:\Users\lostya\OneDrive - Version 1\MSP DevOps\devops_workshop\DevOpsProject\UserService\UserService\obj\Debug\netcoreapp2.1\UserService.pdb
