@@ -30,8 +30,13 @@ namespace UserService
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            //connection string for the DB
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=UserService.RegistrationDb;Trusted_Connection=True;ConnectRetryCount=0";
+            //connection string for the localDB
+            //var connection = @"Server=(localdb)\mssqllocaldb;Database=UserService.RegistrationDb;Trusted_Connection=True;ConnectRetryCount=0";
+
+
+            //Connection for hosted SQL server
+            var connection = @"Server=tcp:user-service-db-server.database.windows.net,1433;Initial Catalog=user_service_db;Persist Security Info=False;User ID=user;Password=devOps_pass;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+
             services.AddDbContext<RegistrationContext>
                  (options => options.UseSqlServer(connection));
             services.AddSwaggerGen(c =>
