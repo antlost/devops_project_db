@@ -13,7 +13,7 @@ namespace UserService.Controllers
     public class AuthenticationController : ControllerBase
     {
         //test variables
-        Registration TestUser = new Registration { FirstName = "Conor", LastName = "Oneill", Email = "test@version1.com", Password = "test123" };
+        Registration TestUser = new Registration { forename = "Conor", surename = "Oneill", email = "test@version1.com", password = "test123" };
 
 
 
@@ -28,7 +28,7 @@ namespace UserService.Controllers
         [HttpPost]
         public object Post(string email, string password)
         {
-            if (TestUser.Email == email && TestUser.Password == password)
+            if (TestUser.email == email && TestUser.password == password)
             {
                 return this.Ok("success: all ok!!");
             }

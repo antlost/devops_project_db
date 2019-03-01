@@ -14,20 +14,6 @@ namespace UserService.Controllers
     {
         public string[] TestValues = {"tester@version1.com" };
 
-        //// GET api/values
-        //[HttpGet]
-        //public ActionResult<IEnumerable<string>> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        // POST api/values
-        //[HttpPost]
-        //public string Post(string firstname, string lastname, string email, string password)
-        //{
-        //    return "You tried to register the following details for email: " + email;
-        //}
-
        // POST api/values
        [HttpPost]
         public string Post(string firstname, string lastname, string email, string password)
