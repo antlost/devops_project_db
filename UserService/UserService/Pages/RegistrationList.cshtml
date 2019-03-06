@@ -1,0 +1,40 @@
+﻿@page
+@model RegistrationListModel
+@{
+    ViewData["Title"] = "Registration List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+@if (Model.HasError)
+{
+    <p>Unable to get Regristraitons from User Service. Please try again later.</p>
+}
+else
+{
+        <div class="container">
+        <h2>List of Registrations</h2>
+        <table class="table table-striped">
+        <thead>
+        <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Forename</th>
+                <th>Surname</th>
+        </tr>
+        </thead>
+        <tbody>
+                @foreach (var registration in Model.Registrations)
+                {
+                        <tr>
+                                <td>@registration.id</td>
+                                <td>@registration.email</td>
+                                <td>@registration.forename</td>
+                                <td>@registration.surename</td>
+                        </tr>
+                }
+        </tbody>
+        </table>
+        </div>
+}

@@ -30,8 +30,13 @@ namespace UserService
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            services.AddHttpClient();
+
+
             //connection string for the DB
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=UserService.RegistrationDb;Trusted_Connection=True;ConnectRetryCount=0";
+            //var connection = @"Server=(localdb)\mssqllocaldb;Database=UserService.RegistrationDb;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=tcp:user-service-db-server.database.windows.net,1433;Initial Catalog=user_service_db;Persist Security Info=False;User ID=user;Password=devOps_pass;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            
             services.AddDbContext<RegistrationContext>
                  (options => options.UseSqlServer(connection));
             services.AddSwaggerGen(c =>
@@ -59,11 +64,15 @@ namespace UserService
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
                 // Get swagger UI on root for convenience
-                c.RoutePrefix = string.Empty;
+                //c.RoutePrefix = string.Empty;
+                // Get swagger UI on /swagger as we now have the UI on the root.
+                c.RoutePrefix = "swagger";
 
             });
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
             app.UseMvc();
         }
     }

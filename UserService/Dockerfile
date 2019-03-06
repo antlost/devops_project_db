@@ -11,6 +11,7 @@ COPY UserService/. ./UserService/
 WORKDIR /app/UserService
 RUN dotnet publish -c Release -o out
 
+EXPOSE 2222/tcp
 
 FROM microsoft/dotnet:2.1-aspnetcore-runtime AS runtime
 WORKDIR /app
