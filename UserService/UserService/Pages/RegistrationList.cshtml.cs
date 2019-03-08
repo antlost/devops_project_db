@@ -40,7 +40,7 @@ namespace UserService.Pages
             {
                 HasError = true;
                 Registrations = Array.Empty<Registration>();
-            }                         
+            }
         }
     }
 }

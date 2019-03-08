@@ -1,0 +1,39 @@
+﻿@page
+@model UserProfileModel
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+@if (Model.HasError)
+{
+    <p>Unable to get build User Profile for user @Model.UserId. Please try again later.</p>
+}
+else
+{
+    @if (Model.RegisteredUser != null)
+    {
+        <div class="container">
+        <table class="table table-striped">
+        <thead>
+        <tr>
+                <th>User Name</th>
+                <th>Loyalty Points</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Model.RegisteredUser.forename
+                </td>
+                <td>
+                    @Model.UserLoyalty.points
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
+    }
+}
