@@ -1,3 +1,4 @@
+# Container used to build
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /app
 
@@ -11,9 +12,9 @@ COPY UserService/. ./UserService/
 WORKDIR /app/UserService
 RUN dotnet publish -c Release -o out
 
-EXPOSE 2222/tcp
-
+# Published runtime container
 FROM microsoft/dotnet:2.1-aspnetcore-runtime AS runtime
 WORKDIR /app
 COPY --from=build /app/UserService/out ./
+EXPOSE 2222/tcp
 ENTRYPOINT ["dotnet", "UserService.dll"]
